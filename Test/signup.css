@@ -1,0 +1,123 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2
+}
+
+/*
+Estilos del Header
+*/
+.header-container, .content-container {
+  margin: auto;
+  max-width: 1200px;
+  width: 90%;
+  background-color: white;
+  border: 10px solid #f2f2f2;
+  padding: 1em;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 1em;
+  background-color: white;
+
+  display: flex;
+  flex-basis: 90%;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+Estilos del Contenedor de Contenido
+*/
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*
+Estilos del Footer
+*/
+.footer-container {
+  margin: auto;
+  max-width: 1200px;
+  width: 90%;
+  border: 10px solid #f2f2f2;
+  background-color: white;
+  padding: 1em;
+
+  flex-flow: row wrap;
+  justify-content: center;
+  display: flex;
+}
+
+/*
+Estilos de Registro
+*/
+label, input {
+  padding: 15px;
+  display: inline-block;
+  border: none;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 50%;
+  align-self: center;
+}
+
+p {
+  align-self: center;
+}
+
+/*Configuración para pantallas más pequeñas*/
+
+@media (max-width: 760px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    justify-content: 0;
+  }
+
+  header nav {
+    flex-basis: 90%;
+  }
+
+  h1 {
+    padding: 1em;
+    align-self: center;
+  }
+}
